@@ -2,17 +2,48 @@
 
 <head>
     <title>
-        Der mieine projekt
+        Portfolio
     </title>
     <meta charset="utf-8">
-    <link rel="stylesheet" src="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
     <header class="header">
-        <h1 class="header__title">
-            Du hast!
-        </h1>
+        <div class="header__wrapper">
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li class="header__menu-item">
+                        <a href="" class="header__menu-link">
+                            <span class="header__menu-link-home">Home</span>
+                        </a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="" class="header__menu-link">
+                            About me
+                        </a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="" class="header__menu-link">
+                            Skills
+                        </a>
+                    </li>
+
+                    <li class="header__menu-item">
+                        <a href="" class="header__menu-link">
+                            Portfolio
+                        </a>
+                    </li>
+
+                    <li class="header__menu-item">
+                        <a href="" class="header__menu-link">
+                            Contacts
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
     </header>
 </body>
 
