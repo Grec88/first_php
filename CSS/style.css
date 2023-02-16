@@ -481,6 +481,11 @@ html {
     box-sizing: inherit;
 }
 
+img{
+    max-width:100%;
+    display: block;
+}
+
 body {
     font-family: "Lato";
     font-style: normal;
@@ -522,12 +527,53 @@ body {
     text-decoration: none
 }
 
-.header__menu-link-home{
+.header__menu-link-home {
     font-weight: 700;
 }
 
-.header__menu-link:hover, .header__menu-link:focus{
+.header__menu-link:hover,
+.header__menu-link:focus {
     opacity: 0.6add5;
 }
 
 /* header styles end */
+
+
+/* info styles start */
+
+
+.info {
+    margin-bottom: 100px;
+}
+
+.info__wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.info__caption{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.info__title {
+    padding-bottom: 20px;
+    max-width: 200px;
+    font-weight: 900;
+    font-size: 4.8rem;
+    line-height: 5.9rem;
+    color: #070707;
+}
+
+
+.info__desc {
+    margin: 0 auto;
+    max-width: 150px;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+}
+
+
+/* info styles end */

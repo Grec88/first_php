@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <!-- header start -->
     <header class="header">
         <div class="header__wrapper">
             <nav class="header__nav">
@@ -28,7 +29,7 @@
                             Skills
                         </a>
                     </li>
-
+                
                     <li class="header__menu-item">
                         <a href="" class="header__menu-link">
                             Portfolio
@@ -45,6 +46,24 @@
             </nav>
         </div>
     </header>
+    <!-- header end -->
+    <main>
+        <secction class="info">
+            <div class="info__wrapper">
+                <div class="info__caption">
+                    <h1 class="info__title">
+                    Aleksey Likhtinov
+                    </h1>
+                    <p class="info__desc">
+                    Web developer 21 years old, Kursk
+                    </p>
+                </div>
+                <div class="info__pic">
+                    <img src="/img/icon.jpg" alt="Denis Novik" class="info__thumb">
+                </div>
+            </div>
+        </secction>
+    </main>
 </body>
 
 </html>
