@@ -533,7 +533,7 @@ body {
 
 .header__menu-link:hover,
 .header__menu-link:focus {
-    opacity: 0.6add5;
+    opacity: 0.6;
 }
 
 /* header styles end */
