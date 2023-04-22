@@ -63,6 +63,9 @@
                 </div>
             </div>
         </secction>
+        <ul>
+            <li><a href="02_homework.php">Второе домашнее задание</a></li>
+        </ul>
     </main>
 </body>
 
