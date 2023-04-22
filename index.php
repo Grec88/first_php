@@ -59,7 +59,7 @@
                     </p>
                 </div>
                 <div class="info__pic">
-                    <img src="/img/icon.jpg" alt="Denis Novik" class="info__thumb">
+                    <img src="img\icon.jpg" alt="Aleksey Likhtinov" class="info__thumb">
                 </div>
             </div>
         </secction>
