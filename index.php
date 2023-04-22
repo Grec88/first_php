@@ -64,13 +64,10 @@
             </div>
         </secction>
         <ul>
-            <li><a href="02_homework.php">Второе домашнее задание</a></li>
+            <li><a href="training2.php">Второе домашнее задание</a></li>
+            <li><a href="training3.php">Третье домашнее задание</a></li>
         </ul>
     </main>
 </body>
 
 </html>
-
-<?php
-echo "Hello, world!";
-?>
