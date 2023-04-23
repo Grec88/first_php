@@ -1,0 +1,4 @@
+{
+    "php.validate.executablePath": "",
+    "php.debug.executablePath": "C:/MAMP/bin/php/php8.1.0/ext/php_xdebug.dll"
+}
