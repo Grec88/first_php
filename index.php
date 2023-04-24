@@ -69,6 +69,7 @@
             <li><a href="training4\training4.php">Четвертое домашнее задание</a></li>
             <li><a href="training5.php">Пятое домашнее задание</a></li>
             <li><a href="training6.php">Шестое домашнее задание</a></li>
+            <li><a href="training7\training_form.php">Седьмое домашнее задание</a></li>
         </ul>
     </main>
 </body>
