@@ -1,6 +1,42 @@
 <?php
 require "sanitize.php";
 
+// Создаем подключение к базе данных
+$servername = "localhost";
+$username = "root";
+$password = "root";
+$dbname = "programming_courses";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Проверяем подключение
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Подготавливаем запрос
+$stmt = $conn->prepare("INSERT INTO educations (education_name, short_education_name) VALUES (?, ?)");
+$stmt->bind_param("ss", $education_name, $short_education_name);
+
+// Задаем параметры и выполняем запрос
+$data = array(
+    array("Среднее", "среднее"),
+    array("Высшее", "высшее"),
+    array("Другое", "другое")
+);
+
+foreach ($data as $row) {
+    $education_name = $row[0];
+    $short_education_name = $row[1];
+    $stmt->execute();
+}
+
+echo "New records created successfully";
+
+$sql = "SELECT * FROM educations";
+$result = $conn->query($sql);
+
+
 function render_form()
 {
     ?>
@@ -16,8 +52,16 @@ function render_form()
         <p>
             <b>Образование:</b><br>
             <?php
-            foreach (EDUCATION_ARR as $education => $education_title) {
-                echo '<label>' . $education_title . ' <input type="radio" name="education" value="' . $education . '" ></label>';
+            $servername = "localhost";
+            $username = "root";
+            $password = "root";
+            $dbname = "programming_courses";
+            
+            $conn = new mysqli($servername, $username, $password, $dbname);
+            $sql = "SELECT * FROM educations";
+            $result = $conn->query($sql);
+            while ($row = $result->fetch_assoc()) {
+                echo '<label>' . $row['short_education_name'] . ' <input type="radio" name="education" value="' . $row['education_name'] . '" ></label>';
             }
             ?>
         </p>
@@ -125,6 +169,9 @@ function render_form()
     } else {
         render_form();
     }
+
+    $stmt->close();
+    $conn->close();
     ?>
 
 

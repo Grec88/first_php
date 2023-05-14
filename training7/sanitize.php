@@ -1,4 +1,6 @@
 <?php
+
+
 function filter_string(string $str): string
 {
     $filtered_str = strip_tags($str);
