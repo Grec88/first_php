@@ -71,6 +71,7 @@
             <li><a href="training6.php">Шестое домашнее задание</a></li>
             <li><a href="training_form.php">Седьмое домашнее задание</a></li>
             <li><a href="training9.php">Девятое домашнее задание</a></li>
+            <li><a href="training11.php">Одинадцатое домашнее задание</a></li>
         </ul>
     </main>
 </body>
