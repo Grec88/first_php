@@ -17,15 +17,6 @@ function filter_email(string $email): string
     return $filtered_email;
 }
 
-const EDUCATION_SCHOOL = 'school';
-const EDUCATION_HIGHER = 'higher';
-const EDUCATION_OTHER = 'other';
-const EDUCATION_ARR = [
-    EDUCATION_SCHOOL => 'Среднее',
-    EDUCATION_HIGHER => 'Высшее',
-    EDUCATION_OTHER => 'Другое'
-];
-
 const LANGUAGE_PHP = 'php';
 const LANGUAGE_PY = 'python';
 const LANGUAGE_GO = 'go';
