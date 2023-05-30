@@ -1,8 +1,11 @@
 <?php
 const MYSQL_HOSTNAME = 'localhost';
-const MYSQL_USERNAME = 'ranepauser';
-const MYSQL_PASSWORD = '12345';
+const MYSQL_USERNAME = 'root';
+const MYSQL_PASSWORD = 'root';
 const MYSQL_DATABASE = 'programming_courses';
+
+$conn = new mysqli(MYSQL_HOSTNAME, MYSQL_USERNAME, MYSQL_PASSWORD, MYSQL_DATABASE);
+
 
 function db_connect(): mysqli
 {
