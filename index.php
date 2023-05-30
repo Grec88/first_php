@@ -18,13 +18,9 @@ function render_login_form()
         </p>
     </form>
 
-    <p>
-        <a href="./registration.php">Регистрация</a>
-    </p>
-<?php
+        <a href="registration.php">Регистрация</a>
+    <?php
 }
-
-
 
 
 function login(): string
@@ -42,9 +38,8 @@ function login(): string
     if (!$filtered_password) {
         $errors_arr[] = 'Вы не указали Пароль';
     }
-    
+
     $user_id = get_user_id_by_email_and_password($email, $password);
-    echo $user_id;
     if (!$user_id) {
         $errors_arr[] = 'Вы указали неправильный email или пароль для входа';
     }
@@ -62,7 +57,7 @@ function login(): string
     set_user_session_id($user_id);
 
     $content_html .= 'Вы успешно авторизовались<br>';
-    $content_html .= '<a href="./training_form.php">Отправить заявку на обучение по программированию</a>';
+    $content_html .= '<a href="training_form.php">Отправить заявку на обучение по программированию</a>';
 
     return $content_html;
 }
@@ -70,7 +65,7 @@ function login(): string
 
 // $user_id = get_current_user_id();
 // if ($user_id) {
-//     header('Location: ./training_form.php');
+//     header('Location: first_php/training_form.php');
 // }
 // ?>
 
