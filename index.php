@@ -143,6 +143,9 @@ function login(): string
             <li><a href="training_form.php">Седьмое домашнее задание</a></li>
             <li><a href="training9.php">Девятое домашнее задание</a></li>
             <li><a href="training11.php">Одинадцатое домашнее задание</a></li>
+            <li><a href="color.php">Четырнадцатое домашнее задание</a></li>
+            <li><a href="lemon.php">Четырнадцатое домашнее задание отфильтрованная картинка</a></li>
+            <li><a href="trapezoid.php">Четырнадцатое домашнее задание трапеция</a></li>
         </ul>
         <?php
         if ($_SERVER['REQUEST_METHOD'] == "POST") {
